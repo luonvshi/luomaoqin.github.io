@@ -1,0 +1,146 @@
+/* ================================= 
+全局设置
+==================================== */
+
+* {
+    box-sizing: border-box; 
+    list-style: none;    
+    text-decoration: none; 
+}
+/* ================================= 
+移动优先CSS规则
+==================================== */
+.main-header {
+    text-align: center;
+    background-color: #5eaed0;
+
+    
+
+
+}
+
+/*当鼠标移动到导航项目时，改变背景颜色*/
+.navlist li a:hover {
+    background-color:#7DB534;
+    transition: .3s;
+    text-shadow: 1px 1px 1px black;
+}
+
+a {
+    display: block;
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: blue;
+    color:#e41da9;
+}
+
+.wrap {
+    min-height: calc(100vh - 54px);
+}
+
+.banner {
+    background: url("../images/62.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align:center;
+    padding: 1em 0;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: greenyellow;
+    text-shadow: 1px 1px 1px red;
+    
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h2 {
+    padding-top: 1em;
+}
+
+p{
+    margin: 0;
+    padding: 1em;
+}
+.col h1 {
+    text-align: center;
+}
+.col {
+    background-color: lightcoral;
+    color: aquamarine;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    padding: 1em 0;
+}
+.css {
+    background-color: cornflowerblue;
+}
+.javascript {
+    background-color: coral;
+}
+
+@media (min-width:600px) {
+    .main-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .navlist {
+        display: flex;
+        align-items: stretch;
+
+    }
+    
+    .navlist li a {
+        padding: 2em 2em;
+        
+    }
+    
+    .banner {
+        height: 500px;
+    }
+    .container {
+        padding: 3em 0;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .col {
+        flex-basis:25%;
+        flex-grow: 1;
+        margin: 0 .5em;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px
+            
+    }
+    .col p{
+        margin: auto;
+    }
+    .col:hover {
+        box-shadow: 3px 3px 2px rgba(0,0,0,.5);
+        transition: .3s;
+        border: 1px solid black;
+        cursor: default;
+        text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+    }
+    .col h1 {
+        padding: 0 .5em;
+    }
+}
+
+
+
+
+
+
+
